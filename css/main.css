@@ -1,8 +1,64 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700);
+/* - - - V A R I A B L E S - F O O T E R - - - */
+/* - - - V A R I A B L E S - F O O T E R - - - */
+/* - - - I N I C I O - F O O T E R - - - */
 .bg-gray {
-  background-color: #D5D5D5; }
+  background-color: #E6E4E1;
+  padding: 3%; }
 
-.sep {
-  content: "|"; }
+.lista-footer > ul > li {
+  font-size: 12px;
+  list-style: none;
+  color: #8B8883; }
+
+.lista-diarios > ul > li {
+  font-size: 10px;
+  list-style: none;
+  display: inline;
+  color: #928F8A; }
+
+.sep:after {
+  content: "|";
+  color: #928F8A; }
+
+.sep-footer {
+  border-left: 1px solid #928F8A; }
+
+.logo-footer {
+  margin: 7% 0;
+  color: #8B8883; }
+
+.txblack {
+  color: #343535; }
+
+.derechos {
+  font-size: 12px; }
+
+/* - - - F I N - F O O T E R - - - */
+.contacto {
+  text-align: center;
+  font-weight: bold; }
+
+.example {
+  text-align: right; }
+
+form {
+  margin: 5% 13%; }
+
+.forml {
+  text-align: justify;
+  margin: 2%; }
+
+.btnimg {
+  margin-left: 30%; }
+
+/* - - - G L O B A L - - - */
+.mt-5 {
+  margin-top: 5%; }
+
+.mt-3 {
+  margin-top: 3%; }
+
+/* - - - G L O B A L - - - */
 
 /*# sourceMappingURL=main.css.map */

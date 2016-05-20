@@ -35,6 +35,25 @@
   font-size: 12px; }
 
 /* - - - F I N - F O O T E R - - - */
+.title {
+  color: #343535;
+  font-weight: bold; }
+
+.subtitle {
+  color: #928F8A; }
+
+.blog {
+  border: 1px solid #928F8A;
+  padding: 2%;
+  margin: 1%;
+  min-height: 190px; }
+
+.mb-2 {
+  margin-bottom: 2%; }
+
+.mb-10 {
+  margin-bottom: 10%; }
+
 .contacto {
   text-align: center;
   font-weight: bold; }

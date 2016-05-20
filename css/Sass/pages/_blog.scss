@@ -1,0 +1,16 @@
+.title{
+	color: $black;
+	font-weight: bold;
+}
+.subtitle{
+	color: $lightgray;
+}
+.blog{
+	@include blog ($borde, 2%, 1%, 190px)
+}
+.mb-2{
+	margin-bottom: 2%;
+}
+.mb-10{
+	margin-bottom: 10%;
+}

@@ -1,0 +1,6 @@
+@mixin blog($border, $pd, $mg, $hg){
+	border: $border;
+	padding:$pd;
+	margin: $mg;
+	min-height: $hg
+}

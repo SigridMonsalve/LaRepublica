@@ -1,0 +1,34 @@
+/* - - - I N I C I O - F O O T E R - - - */
+.bg-gray{
+	background-color: $gray;
+	padding: 3%;
+}
+.lista-footer>ul>li{
+	font-size: 12px;
+	list-style: none;
+	color: $darkgray;
+}
+.lista-diarios>ul>li{
+	font-size: 10px;
+	list-style: none;
+	display: inline;
+	color: $lightgray;
+}
+.sep:after{
+	content: "|";
+	color: $lightgray;
+}
+.sep-footer{
+	border-left: 1px solid $lightgray;
+}
+.logo-footer{
+	margin: 7% 0;
+	color: $darkgray;
+}
+.txblack{
+	color: $black;
+}
+.derechos{
+	font-size: 12px;
+}
+/* - - - F I N - F O O T E R - - - */

@@ -1,6 +1,9 @@
+/* - - - M I X I N S - B L O G - - - */
+
 @mixin blog($border, $pd, $mg, $hg){
 	border: $border;
 	padding:$pd;
 	margin: $mg;
 	min-height: $hg
 }
+/* - - - M I X I N S - B L O G - - - */

@@ -1,3 +1,6 @@
+.image-blog{
+	width: initial;
+}
 .title{
 	color: $black;
 	font-weight: bold;
@@ -6,11 +9,19 @@
 	color: $lightgray;
 }
 .blog{
-	@include blog ($borde, 2%, 1%, 190px)
+	@include blog ($borde, 2%, 1%, 190px);
+	position: relative;
 }
 .mb-2{
 	margin-bottom: 2%;
 }
 .mb-10{
 	margin-bottom: 10%;
+}
+.bg-grey {
+    background-color: #E6E4E1;
+    padding: 3%;
+    width: 87%;
+    position: absolute;
+    bottom: 6%;
 }

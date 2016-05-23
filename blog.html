@@ -2,16 +2,81 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>La República - Blog</title>
+	<title>La República</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/dist/bootstrap.css">
 	<link rel="stylesheet" href="css/dist/font-awesome.min.css">
 	<link rel="stylesheet" href="css/dist/slick.css">
+	<link rel="stylesheet" href="css/dist/slick-theme.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
-	<!--sigrid -->
-	</header>
+	<div class="container-fluid">
+		<header>
+			<section class="ad">
+				<div class="row">
+					<div class="col-lg-12 col-lg-offset-2">
+						<img src="image/banner_top.jpg" alt="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-lg-offset-2">
+						<ul class="list-inline floatLeft">
+							<li><a href="#">LIBERO.PE</a></li>
+							<li><a href="#">ELPOPULAR.PE</a></li>
+							<li><a href="#">FUNDACIÓN GUSTAMO MOHME LLONA</a></li>
+						</ul>
+						<div class="floatRight">
+							<button>SUSCRÍBETE AL BOLETÍN</button>
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-twitter"></i>
+							<i class="fa fa-google-plus"></i>
+							<i class="fa fa-envelope"></i>
+							<i class="fa fa-rss"></i>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="header">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<img class="logo" src="image/logo-la-republica.jpg" alt="">
+					</div>
+					<div class="col-lg-6 col-lg-offset-2">
+						<img class="floatRight" src="image/sideLogo.JPG" alt="">
+					</div>
+				</div>			
+			</section>
+			<nav>
+				<div class="row">
+					<div class="col-lg-12 col-lg-offset-2">
+						<ul class="list-inline center">
+							<li><a href="">POLÍTICA</a></li>
+							<li><a href="">ECONOMÍA</a></li>
+							<li><a href="">SOCIEDAD</a></li>
+							<li><a href="">ELECC. REGIONALES</a></li>
+							<li><a href="">DEPORTES</a></li>
+							<li><a href="">CHAMPIONS L.</a></li>
+							<li><a href="">ESPECTÁCULOS</a></li>
+							<li><a href="">ED. IMPRESA</a></li>
+							<li><a href="">REGIONALES</a></li>
+							<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MÁS SECCIONES<span class="caret"></span></a> 
+								<ul class="dropdown-menu"> 
+									<li><a href="#">Action</a></li> 
+									<li><a href="#">Another action</a></li> 
+									<li><a href="#">Something else here</a></li> 
+									<li role="separator" class="divider"></li> 
+									<li><a href="#">Separated link</a></li> 
+								</ul> 
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</div>
 	<section>
 		<div class="container-fluid">
 			<div class="row">
@@ -23,13 +88,13 @@
 				<div class="col-md-12 mt-3">
 					<div class="titulos">
 						<h1 class="title">Blog</h1>
-						<h4 class="subtitle">LO MEJOR EN BLOGS <img src="image/double-arrow-bottom.png"> </h4>
+						<h4 class="subtitle">LO MEJOR EN BLOGS <img class="image-blog" src="image/double-arrow-bottom.png"></h4>
 					</div>
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -37,8 +102,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -46,8 +111,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -55,8 +120,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Y tú... ¿Ya hiciste click?</h6>
 						</div>
@@ -64,8 +129,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -73,8 +138,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Moda Ente Tendente</h6>
 						</div>
@@ -82,8 +147,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -91,8 +156,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -100,8 +165,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -109,8 +174,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -118,8 +183,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -127,8 +192,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -136,8 +201,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -145,8 +210,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -154,8 +219,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -163,8 +228,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -172,8 +237,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -181,8 +246,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -190,8 +255,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">El Gol de la muerte</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_01.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_01.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">LIBROS</h6>
 						</div>
@@ -199,8 +264,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">Dios ha muerto... tengo las manos cubiertas de sangre</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_02.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_02.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Educando con Amor Firme</h6>
 						</div>
@@ -208,8 +273,8 @@
 					<div class="blog col-md-5">
 						<p>Lunes, 14 de julio de 2015</p>
 						<h4 class="mb-2 title">¿Cuál es tu queso favorito?</h4>
-						<div class="bg-gray">
-							<img class="pull-left" src="image/blog_avatar_03.jpg">
+						<div class="bg-grey">
+							<img class="image-blog pull-left" src="image/blog_avatar_03.jpg">
 							<h5 class="title">BLOG</h5>
 							<h6 class="subtitle">Décimas Cosas</h6>
 						</div>
@@ -362,6 +427,25 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 	<script src="js/slick.min.js"></script>
-	
+	<script type="text/javascript">
+		$('.multiple-items').slick({
+			dots:false,
+			infinite: true,
+			slidesToShow: 9,
+			slidesToScroll: 1,
+			variableWidth:true
+		});
+	</script>
+	<script type="text/javascript">
+		$('.columnistas-items').slick({
+			dots:true,
+			infinite: false,
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			appendDots:'.columnistas-items',
+			variableWidth:false,
+			arrows:false
+		});
+	</script>
 </body>
 </html>

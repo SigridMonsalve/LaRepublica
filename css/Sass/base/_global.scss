@@ -1,3 +1,128 @@
+*{
+	font-family:"Lato";
+}
+a{
+	text-decoration:none;
+}
+img{
+	width:100%;
+}
+.row{
+	padding:5px 0px;
+}
+.center{
+	text-align:center;
+}
+.header,.header .logo{
+	margin-top:10px;
+}
+i{
+	margin-left:5px;
+	&.fa-facebook{
+		color:$blue;
+	}
+	&.fa-twitter{
+		color:$lightBlue;
+	}
+	&.fa-google-plus{
+		color:$red;
+	}
+	&.fa-envelope{
+		color:$yellow;
+	}
+	&.fa-rss{
+		color:$orange;
+	}
+}
+.ad{
+	background:$grey;
+
+	a,button{
+		font-size:11px;
+	}
+	button{@include button($lightRed,0px,5px);
+	}
+}
+nav{
+	ul{
+		width:100%;
+		background:$red;
+		border-radius:5px;
+		margin-left:0px!important;
+		li{
+			padding:5px 0px;
+			border-right:1px solid $grey;
+			&:nth-child(10){
+				border:none;
+			}
+		}
+		a{	
+			font-family:"Open Sans Condensed";
+			color:$white;
+			margin:0px 11px;
+			&:hover{
+				color:$white;
+				font-weight:bold;
+			}
+		}
+	}
+}
+.small{
+	font-size:13px;
+}
+.xsmall{
+	font-size:11px;
+}
+.floatRight{
+	float:right;
+}
+.floatLeft{
+	float:left;
+}
+.fa-circle{
+	font-size:5px;
+	color:$darkGrey;
+	margin:0 20px;
+	vertical-align:middle;
+}
+.temas{
+	font-family:"Open Sans Condensed";
+	background:$buttonGrey;
+	border-radius:5px;
+	padding:5px 10px;
+	&:before,&:after{
+		content:" ";
+		display:block;
+		clear:both;
+	}
+	p{
+		width:15%;
+		margin-bottom:0px;
+	}
+	.multiple-items{
+		vertical-align:middle;
+		width:85%;
+
+		&.slick-slider{
+			margin-bottom:0px;
+		}
+	}
+}
+.officialContent{
+	.fa-facebook{@include contentButton($blue);
+	}
+	.fa-twitter{@include contentButton($lightBlue);
+	}
+	.fa-google-plus{@include contentButton($red);
+	}
+	.fa-youtube-play{
+		color:$red;
+	}
+	.fa-camera{
+		color:$red;
+	}
+}
+
 /* - - - I N I C I O - F O O T E R - - - */
 .bg-gray{
 	background-color: $gray;

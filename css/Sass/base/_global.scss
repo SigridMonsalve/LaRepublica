@@ -122,3 +122,52 @@ nav{
 		color:$red;
 	}
 }
+
+.contentWide{
+	>h4{
+		font-family:"Open Sans Condensed";
+		margin-top:0px;
+		margin-right:20px;
+		font-weight:bold;
+		color:$darkGrey;
+	}
+	>img{
+		margin-top:5px;
+		width:15px;
+		height:15px;
+	}
+	>div{
+		position:relative;
+		border-bottom:1px solid $darkGrey;
+		.glyphicon{
+			color:$darkGrey;
+			vertical-align:text-top;
+		}
+		p:nth-child(4){
+			font-size:15px;
+		}
+		&:before,&:after{
+			content:" ";
+			clear:both;
+			display:block;
+		}
+		img{
+			margin-right:30px;
+			width:200px;
+			height:120px;
+		}
+		h4{
+			margin-top:0px;
+			font-weight:bold;
+		}
+		.bottomList{
+			position:absolute;
+			left:225px;
+			bottom:10px;;
+			p{
+				text-transform:uppercase;
+				font-size:12px;
+			}
+		}
+	}
+}

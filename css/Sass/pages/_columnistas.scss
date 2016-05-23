@@ -1,0 +1,56 @@
+h1,h2,h3,h4{
+	font-family:"PT Sans Caption";
+}
+h1{
+	margin-bottom:35px;
+}
+.contentWide{
+	margin:0px;
+	>div{
+		border-bottom:none;
+	}
+}
+.columnistas{
+	margin-bottom:15px;
+	>div{
+		box-sizing:border-box;
+		border:1px solid $buttonGrey;
+		padding:10px;
+		width:30%;
+		margin:0 15px;
+		display:inline-block;
+		height:217px;
+		vertical-align:top;
+		position:relative;
+		&:before,&:after{
+			content:" ";
+			display:block;
+			clear:both;
+		}
+	}
+	.autor{
+		width:93%;
+		position: absolute;
+		bottom: 10px;
+		vertical-align:bottom;
+		padding:10px;
+		background:$buttonGrey;
+		img{@include imgColumnista(100px,100px);
+			margin-right:10px;
+		}
+		p{
+			color:$darkGrey;
+			font-weight:bold;
+		}
+		.small{
+			font-family:"Open Sans Condensed";
+			color:#000000;
+		}
+	}
+}
+.blockTop{
+	button{@include button($red,10px,20px);
+		display:inherit;
+		margin:0 auto;
+	}
+}

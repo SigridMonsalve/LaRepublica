@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
 * {
   font-family: "Lato"; }
 
@@ -123,6 +124,43 @@ nav ul {
 .officialContent .fa-camera {
   color: #BA1414; }
 
+.contentWide > h4 {
+  font-family: "Open Sans Condensed";
+  margin-top: 0px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #768696; }
+.contentWide > img {
+  margin-top: 5px;
+  width: 15px;
+  height: 15px; }
+.contentWide > div {
+  position: relative;
+  border-bottom: 1px solid #768696; }
+  .contentWide > div .glyphicon {
+    color: #768696;
+    vertical-align: text-top; }
+  .contentWide > div p:nth-child(4) {
+    font-size: 15px; }
+  .contentWide > div:before, .contentWide > div:after {
+    content: " ";
+    clear: both;
+    display: block; }
+  .contentWide > div img {
+    margin-right: 30px;
+    width: 200px;
+    height: 120px; }
+  .contentWide > div h4 {
+    margin-top: 0px;
+    font-weight: bold; }
+  .contentWide > div .bottomList {
+    position: absolute;
+    left: 225px;
+    bottom: 10px; }
+    .contentWide > div .bottomList p {
+      text-transform: uppercase;
+      font-size: 12px; }
+
 .titularUno {
   background: url(../image/img_grid_principal.jpg);
   background-size: cover;
@@ -169,13 +207,13 @@ nav ul {
   border-top: 4px solid #BA1414;
   padding-bottom: 15px; }
   .contenedorSlider img {
-    margin: 0 auto;
     height: 80px;
     width: 80px;
     border: 3px solid #FFFFFF;
     -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
     -moz-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
-    box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54); }
+    box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
+    margin: 0 auto; }
   .contenedorSlider div {
     padding: 10px 10px 0px 10px;
     text-align: center; }
@@ -244,44 +282,71 @@ nav ul {
   .boxsetUno a, .boxsetDos a, .boxsetTres a, .boxsetCuatro a {
     color: black; }
 
-.contentWide > h4 {
-  font-family: "Open Sans Condensed";
-  margin-top: 0px;
-  margin-right: 20px;
-  font-weight: bold;
-  color: #768696; }
-.contentWide > img {
-  margin-top: 5px;
-  width: 15px;
-  height: 15px; }
-.contentWide div {
-  position: relative;
-  padding: 20px 0px;
-  border-bottom: 1px solid #768696; }
-  .contentWide div .glyphicon {
-    color: #768696;
-    vertical-align: text-top; }
-  .contentWide div p:nth-child(4) {
-    font-size: 15px; }
-  .contentWide div:before, .contentWide div:after {
-    content: " ";
-    clear: both;
-    display: block; }
-  .contentWide div img {
-    margin-right: 30px;
-    width: 200px;
-    height: 120px; }
-  .contentWide div h4 {
-    margin-top: 0px;
-    font-weight: bold; }
-  .contentWide div .bottomList {
-    position: absolute;
-    left: 225px;
-    bottom: 10px; }
-    .contentWide div .bottomList p {
-      text-transform: uppercase;
-      font-size: 12px; }
+.news .contentWide > div {
+  padding: 20px 0px; }
 
 /*te amo mucho polola*/
+h1, h2, h3, h4 {
+  font-family: "PT Sans Caption"; }
+
+h1 {
+  margin-bottom: 35px; }
+
+.contentWide {
+  margin: 0px; }
+  .contentWide > div {
+    border-bottom: none; }
+
+.columnistas {
+  margin-bottom: 15px; }
+  .columnistas > div {
+    box-sizing: border-box;
+    border: 1px solid #E4E7EA;
+    padding: 10px;
+    width: 30%;
+    margin: 0 15px;
+    display: inline-block;
+    height: 217px;
+    vertical-align: top;
+    position: relative; }
+    .columnistas > div:before, .columnistas > div:after {
+      content: " ";
+      display: block;
+      clear: both; }
+  .columnistas .autor {
+    width: 93%;
+    position: absolute;
+    bottom: 10px;
+    vertical-align: bottom;
+    padding: 10px;
+    background: #E4E7EA; }
+    .columnistas .autor img {
+      height: 100px;
+      width: 100px;
+      border: 3px solid #FFFFFF;
+      -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
+      -moz-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
+      box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.54);
+      margin-right: 10px; }
+    .columnistas .autor p {
+      color: #768696;
+      font-weight: bold; }
+    .columnistas .autor .small {
+      font-family: "Open Sans Condensed";
+      color: #000000; }
+
+.blockTop button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #BA1414;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  display: inherit;
+  margin: 0 auto; }
+  .blockTop button:hover {
+    background: #8c0f0f;
+    color: #FFFFFF; }
 
 /*# sourceMappingURL=main.css.map */

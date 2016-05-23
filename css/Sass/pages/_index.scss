@@ -1,0 +1,107 @@
+.titularUno{@include bgTitular(url(../image/img_grid_principal.jpg),75%,10px,20px);
+}
+.titularDos{@include bgTitular(url(../image/img_grid_secundario.jpg),25%,10px,20px);
+	margin-bottom:20px;
+}
+.titularTres{@include bgTitular(url(../image/fotogaleria_col01_01.jpg),25%,10px,20px);
+	margin-top:20px;
+}
+.contenedorSlider{
+	background:$grey;
+	border-top:4px solid $red;
+	padding-bottom:15px;
+	img{
+		margin:0 auto;
+		height:80px;
+		width:80px;
+		border:3px solid $white;
+		-webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
+		-moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
+		box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
+	}
+	div{
+		padding:10px 10px 0px 10px;
+		text-align:center
+	}
+}
+.boxsetUno{
+	>div{@include bgTitular(url(../image/img_especiales.jpg),45%,5px,10px);
+	}
+}
+.boxsetDos{
+	>div{@include bgTitular(url(../image/img_especiales_aside.jpg),38.5%,5px,10px);
+	}
+}
+.boxsetTres{
+	>div{@include bgTitular(url(../image/img_infografia_especiales.jpg),45%,5px,10px);
+	}
+}
+.boxsetCuatro{
+	>div{@include bgTitular(url(../image/img_video_destacado.jpg),38.5%,5px,10px);
+	}
+}
+.boxsetUno,.boxsetDos,.boxsetTres,.boxsetCuatro{
+	border:1px solid $buttonGrey;
+	margin-top:10px;
+	margin-bottom:30px;
+	>p{
+		margin:10px 0px;
+		&:first-child{
+			color:$red;
+			font-weight:bold;
+		}
+	}
+	a{
+		color:black;
+	}
+}
+.contentWide{
+	>h4{
+		font-family:"Open Sans Condensed";
+		margin-top:0px;
+		margin-right:20px;
+		font-weight:bold;
+		color:$darkGrey;
+	}
+	>img{
+		margin-top:5px;
+		width:15px;
+		height:15px;
+	}
+	div{
+		position:relative;
+		padding:20px 0px;
+		border-bottom:1px solid $darkGrey;
+		.glyphicon{
+			color:$darkGrey;
+			vertical-align:text-top;
+		}
+		p:nth-child(4){
+			font-size:15px;
+		}
+		&:before,&:after{
+			content:" ";
+			clear:both;
+			display:block;
+		}
+		img{
+			margin-right:30px;
+			width:200px;
+			height:120px;
+		}
+		h4{
+			margin-top:0px;
+			font-weight:bold;
+		}
+		.bottomList{
+			position:absolute;
+			left:225px;
+			bottom:10px;;
+			p{
+				text-transform:uppercase;
+				font-size:12px;
+			}
+		}
+	}
+}
+/*te amo mucho polola*/

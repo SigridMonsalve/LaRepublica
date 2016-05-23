@@ -336,10 +336,14 @@ nav ul {
 .mail {
   position: absolute;
   top: 20;
-  left: 100px; }
+  left: 100px;
+  width: initial; }
 
 .btn {
   width: 100%; }
+
+.img-sidebar {
+  width: initial; }
 
 /* - - - S I D E B A R - I N D E X - - - */
 .image-blog {

@@ -381,16 +381,31 @@ input {
   background-color: #952B7A;
   position: absolute;
   bottom: -1px;
+  /*23%*/
   left: 35%; }
-
-.center {
-  text-align: center; }
 
 .sep:after {
   content: "|";
   padding-left: 10px;
   padding-right: 10px;
   margin: auto; }
+
+.fotos-dest {
+  position: relative;
+  border-top: 5px solid #70848E; }
+
+.titlephots {
+  color: #FFFFFF;
+  background-color: #70848E;
+  position: absolute;
+  top: -10px;
+  left: 25%; }
+
+.big {
+  margin: 11% 2% 5% 2%; }
+
+.photo {
+  border: 2px solid #70848E; }
 
 /* - - - S I D E B A R - I N D E X - - - */
 .image-blog {

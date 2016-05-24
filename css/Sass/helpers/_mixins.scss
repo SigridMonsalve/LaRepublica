@@ -30,23 +30,10 @@
 	background:$buttonGrey;
 	padding:5px;
 }
-@mixin borderGradientLeft($color1,$color2){
-	border-left-width:1px;
-	border-left-style: solid;
-	-webkit-border-left-image: -webkit-gradient(linear, 0 0, 0 100%, from($color1), to($color2)) 1 100%;
-	-webkit-border-left-image: -webkit-linear-gradient($color1, $color2) 1 100%; 
-	-moz-border-left-image: -moz-linear-gradient($color1, $color2) 1 100%; 
-	-o-border-left-image: -o-linear-gradient($color1, $color2) 1 100%; 
-	border-left-image: linear-gradient(to bottom, $color1, $color2) 1 100%;
-}
-@mixin borderGradientRight($color1,$color2){
-	border-right-width:1px;
-	border-right-style: solid;
-	-webkit-border-right-image: -webkit-gradient(linear, 0 0, 0 100%, from($color1), to($color2)) 1 100%;
-	-webkit-border-right-image: -webkit-linear-gradient($color1, $color2) 1 100%; 
-	-moz-border-right-image: -moz-linear-gradient($color1, $color2) 1 100%; 
-	-o-border-right-image: -o-linear-gradient($color1, $color2) 1 100%; 
-	border-right-image: linear-gradient(to bottom, $color1, $color2) 1 100%;
+@mixin bgImage($url){
+	background:$url;
+	background-size:cover;
+	background-position:center center;
 }
 @mixin bgTitular($url,$pdTop,$pdBott,$pdLR){
 	background:$url;

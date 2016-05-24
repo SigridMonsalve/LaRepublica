@@ -24,16 +24,11 @@
 		left:40%;
 		top:-10px;
 		height:30px;
-		text-align:center;
 		color:white;
-		font-weight:bold;
 		padding:5px;
 	}
 	.xsmall{
 		margin-top:5px;
-	}
-	p:nth-child(3){
-		font-weight:bold;
 	}
 }
 .boxsetUno{
@@ -71,6 +66,7 @@
 	.contentWide{
 		>div{
 			padding:20px 0px;
+			border-bottom:1px solid $darkGrey;
 		}
 	}
 }
@@ -104,10 +100,13 @@
  	width: initial;
  	margin-right: 5%
  }
- input{
- 	margin: 2% 0;
- 	width: 100%;
+ .columnRight{
+ 	input{
+	 	margin: 2% 0;
+	 	width: 100%;
+ 	}
  }
+ 
  .btn-suscribe{
  	background-color: $red;
 	color: white;

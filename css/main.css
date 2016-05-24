@@ -1,8 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300,700);
-/* - - - M I X I N S - B L O G - - - */
-/* - - - M I X I N S - B L O G - - - */
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:700);
-
+/* - - - M I X I N S - B L O G - - - */
+/* - - - M I X I N S - B L O G - - - */
 * {
   font-family: "Lato"; }
 
@@ -17,6 +16,18 @@ img {
 
 .center {
   text-align: center; }
+
+.small {
+  font-size: 13px; }
+
+.xsmall {
+  font-size: 11px; }
+
+.floatRight {
+  float: right; }
+
+.floatLeft {
+  float: left; }
 
 .header, .header .logo {
   margin-top: 10px; }
@@ -33,11 +44,11 @@ i.fa-rss {
   color: #FF8000; }
 
 .ad {
-  background: #F4F5F7; }
+  background: #F4F5F7;
+  color: #768696; }
   .ad .floatRight * {
     margin-left: 10px; }
   .ad .floatRight div {
-    color: #768696;
     padding: 5px 10px;
     margin-left: 10px;
     display: inline;
@@ -46,10 +57,11 @@ i.fa-rss {
     .ad .floatRight div input {
       width: 60px;
       background: #F4F5F7;
-      border: none;
-      color: #768696; }
-  .ad a, .ad button {
-    font-size: 11px; }
+      border: none; }
+  .ad a, .ad button, .ad .fa-search {
+    font-size: 11px;
+    font-weight: bold;
+    color: #768696; }
   .ad button {
     border-radius: 5px;
     padding: 2px 5px;
@@ -84,18 +96,6 @@ nav ul {
       color: #FFFFFF;
       font-weight: bold; }
 
-.small {
-  font-size: 13px; }
-
-.xsmall {
-  font-size: 11px; }
-
-.floatRight {
-  float: right; }
-
-.floatLeft {
-  float: left; }
-
 .fa-circle {
   font-size: 5px;
   color: #768696;
@@ -116,7 +116,7 @@ nav ul {
     margin-bottom: 0px; }
   .temas .multiple-items {
     vertical-align: middle;
-    width: 85%; }
+    width: 83%; }
     .temas .multiple-items.slick-slider {
       margin-bottom: 0px; }
 
@@ -139,13 +139,6 @@ i:first-child.fa-google-plus {
   background: #E4E7EA;
   padding: 5px; }
 
-.fa-youtube-play {
-  color: #BA1414; }
-
-.fa-camera {
-  color: #BA1414; }
-
-<<<<<<< HEAD
 /* - - - I N I C I O - F O O T E R - - - */
 .bg-gray {
   background-color: #E6E4E1;
@@ -180,13 +173,20 @@ i:first-child.fa-google-plus {
   font-size: 12px; }
 
 /* - - - F I N - F O O T E R - - - */
-=======
+.fa-youtube-play {
+  color: #BA1414; }
+
+.fa-camera {
+  color: #BA1414; }
+
 h4.floatLeft {
-  font-family: "Open Sans Condensed";
   margin-top: 0px;
-  margin-right: 20px;
-  font-weight: bold;
-  color: #768696; }
+  margin-right: 20px; }
+
+.subtitle {
+  color: #928F8A;
+  font-family: "Open Sans Condensed";
+  font-weight: bold; }
 
 img.floatLeft {
   margin-top: 5px;
@@ -219,6 +219,7 @@ img.floatLeft {
     .contentWide > div .bottomList p {
       text-transform: uppercase;
       font-size: 12px; }
+
 .titularUno {
   background: url(../image/img_grid_principal.jpg);
   background-size: cover;
@@ -282,14 +283,10 @@ img.floatLeft {
     left: 40%;
     top: -10px;
     height: 30px;
-    text-align: center;
     color: white;
-    font-weight: bold;
     padding: 5px; }
   .contenedorSlider .xsmall {
     margin-top: 5px; }
-  .contenedorSlider p:nth-child(3) {
-    font-weight: bold; }
 
 .boxsetUno > div {
   background: url(../image/img_especiales.jpg);
@@ -356,7 +353,8 @@ img.floatLeft {
     color: black; }
 
 .news .contentWide > div {
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  border-bottom: 1px solid #768696; }
 
 /* - - - S I D E B A R - I N D E X - - - */
 .bg-sidebar {
@@ -388,7 +386,7 @@ img.floatLeft {
   width: initial;
   margin-right: 5%; }
 
-input {
+.columnRight input {
   margin: 2% 0;
   width: 100%; }
 
@@ -455,9 +453,6 @@ input {
   color: #343535;
   font-weight: bold; }
 
-.subtitle {
-  color: #928F8A; }
-
 .blog {
   border: 1px solid #928F8A;
   padding: 2%;
@@ -477,32 +472,6 @@ input {
   width: 87%;
   position: absolute;
   bottom: 6%; }
-
-.contacto {
-  text-align: center;
-  font-weight: bold; }
-
-.example {
-  text-align: right; }
-
-form {
-  margin: 5% 13%; }
-
-.forml {
-  text-align: justify;
-  margin: 2%; }
-
-.btnimg {
-  margin-left: 30%; }
-
-/* - - - G L O B A L - - - */
-.mt-5 {
-  margin-top: 5%; }
-
-.mt-3 {
-  margin-top: 3%; }
-
-/* - - - G L O B A L - - - */
 
 h1, h2, h3, h4 {
   font-family: "PT Sans Caption"; }
@@ -549,7 +518,7 @@ h1 {
       font-weight: bold; }
     .columnistas .autor .small {
       font-family: "Open Sans Condensed";
-      color: #000000; }
+      color: #343535; }
 
 .blockTop button {
   border-radius: 5px;
@@ -615,6 +584,32 @@ h1 {
     line-height: 1.2; }
   .blockBottom .autor .small {
     font-family: "Open Sans Condensed";
-    color: #000000; }
+    color: #343535; }
+
+.contacto {
+  text-align: center;
+  font-weight: bold; }
+
+.example {
+  text-align: right; }
+
+form {
+  margin: 5% 13%; }
+
+.forml {
+  text-align: justify;
+  margin: 2%; }
+
+.btnimg {
+  margin-left: 30%; }
+
+/* - - - G L O B A L - - - */
+.mt-5 {
+  margin-top: 5%; }
+
+.mt-3 {
+  margin-top: 3%; }
+
+/* - - - G L O B A L - - - */
 
 /*# sourceMappingURL=main.css.map */

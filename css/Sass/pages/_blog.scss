@@ -5,9 +5,6 @@
 	color: $black;
 	font-weight: bold;
 }
-.subtitle{
-	color: $lightgray;
-}
 .blog{
 	@include blog ($borde, 2%, 1%, 190px);
 	position: relative;
@@ -19,7 +16,7 @@
 	margin-bottom: 10%;
 }
 .bg-grey {
-    background-color: #E6E4E1;
+    background-color: $gray;
     padding: 3%;
     width: 87%;
     position: absolute;

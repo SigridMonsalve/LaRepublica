@@ -13,6 +13,18 @@ img{
 .center{
 	text-align:center;
 }
+.small{
+	font-size:13px;
+}
+.xsmall{
+	font-size:11px;
+}
+.floatRight{
+	float:right;
+}
+.floatLeft{
+	float:left;
+}
 .header,.header .logo{
 	margin-top:10px;
 }
@@ -35,12 +47,12 @@ i{
 }
 .ad{
 	background:$grey;
+	color:$darkGrey;
 	.floatRight{
 		*{
 			margin-left:10px;
 		}
 		div{
-		color:$darkGrey;
 		padding:5px 10px;
 		margin-left:10px;
 		display:inline;
@@ -51,12 +63,13 @@ i{
 				width:60px;
 				background:$grey;
 				border:none;
-				color:$darkGrey;
 			}
 		}
 	}
-	a,button{
+	a,button,.fa-search{
 		font-size:11px;
+		font-weight:bold;
+		color:$darkGrey;
 	}
 	button{@include button($lightRed,2px,5px);
 		vertical-align:middle;
@@ -87,18 +100,6 @@ nav{
 		}
 	}
 }
-.small{
-	font-size:13px;
-}
-.xsmall{
-	font-size:11px;
-}
-.floatRight{
-	float:right;
-}
-.floatLeft{
-	float:left;
-}
 .fa-circle{
 	font-size:5px;
 	color:$darkGrey;
@@ -116,7 +117,7 @@ nav{
 	}
 	.multiple-items{
 		vertical-align:middle;
-		width:85%;
+		width:83%;
 
 		&.slick-slider{
 			margin-bottom:0px;
@@ -174,11 +175,13 @@ i:first-child{
 }
 
 h4.floatLeft {
-	font-family:"Open Sans Condensed";
 	margin-top:0px;
 	margin-right:20px;
+}
+.subtitle{
+	color: $lightgray;
+	font-family:"Open Sans Condensed";
 	font-weight:bold;
-	color:$darkGrey;
 }
 img.floatLeft{
 		margin-top:5px;

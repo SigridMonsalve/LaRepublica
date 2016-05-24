@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>La República</title>
 	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/dist/bootstrap.css">
 	<link rel="stylesheet" href="css/dist/font-awesome.min.css">
 	<link rel="stylesheet" href="css/dist/slick.css">
@@ -36,7 +36,7 @@
 						<i class="fa fa-rss"></i>
 						<div>
 							<input type="text" placeholder="BUSCAR">
-							<i class="fa fa-search"></i>
+							<a href=""><i class="fa fa-search"></i></a>
 						</div>
 					</div>
 				</div>
@@ -45,7 +45,9 @@
 		<section class="header">
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-2">
-					<img class="logo" src="image/logo-la-republica.jpg" alt="">
+					<a href="index.html">
+						<img class="logo" src="image/logo-la-republica.jpg" alt="">
+					</a>
 				</div>
 				<div class="col-lg-6 col-lg-offset-2">
 					<img class="floatRight" src="image/sideLogo.JPG" alt="">
@@ -65,12 +67,14 @@
 						<li><a href="">ESPECTÁCULOS</a></li>
 						<li><a href="">ED. IMPRESA</a></li>
 						<li><a href="">REGIONALES</a></li>
-						<li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="">MÁS SECCIONES <span class="caret"></span></a></li>
-						<ul class="dropdown-menu">
-							<li><a href="columnistas.html">Columnistas</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contacto.html">Contacto</a></li>
-						</ul>	
+						<li class="dropdown"> 
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MÁS SECCIONES<span class="caret"></span></a> 
+							<ul class="dropdown-menu"> 
+								<li><a href="columnistas.html">Columnistas</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="contacto.html">Contacto</a></li> 
+							</ul> 
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -150,49 +154,49 @@
 				<div class="row officialContent">
 					<div class="col-lg-16">
 						<div class="contenedorSlider">
-							<span class="sectionTitle">
-								<p>COLUMNISTAS</p>
+							<span class="sectionTitle center">
+								<p><b>COLUMNISTAS</b></p>
 							</span>
 							<div class="columnistas-items">
 								<div>
 									<img src="image/img-columnistas.jpg" alt="">
 									<p class="xsmall">Mario Vargas Llosa</p>
-									<p>Megarrenuncia apulpinante</p>
+									<p><b>Megarrenuncia apulpinante</b></p>
 								</div>
 								<div>
 									<img src="image/img_blogueros.jpg" alt="">
 									<p class="xsmall">Augusto Álvarez Rodriguez</p>
-									<p>Respuesta a una derrota estridente</p>
+									<p><b>Respuesta a una derrota estridente</b></p>
 								</div>
 								<div>
 									<img src="image/img-columnistas.jpg" alt="">
 									<p class="xsmall">Mario Vargas Llosa</p>
-									<p>Megarrenuncia apulpinante</p>
+									<p><b>Megarrenuncia apulpinante</b></p>
 								</div>
 								<div>
 									<img src="image/img_blogueros.jpg" alt="">
 									<p class="xsmall">Augusto Álvarez Rodriguez</p>
-									<p>Respuesta a una derrota estridente</p>
+									<p><b>Respuesta a una derrota estridente</b></p>
 								</div>
 								<div>
 									<img src="image/img-columnistas.jpg" alt="">
 									<p class="xsmall">Mario Vargas Llosa</p>
-									<p>Megarrenuncia apulpinante</p>
+									<p><b>Megarrenuncia apulpinante</b></p>
 								</div>
 								<div>
 									<img src="image/img_blogueros.jpg" alt="">
 									<p class="xsmall">Augusto Álvarez Rodriguez</p>
-									<p>Respuesta a una derrota estridente</p>
+									<p><b>Respuesta a una derrota estridente</b></p>
 								</div>
 								<div>
 									<img src="image/img-columnistas.jpg" alt="">
 									<p class="xsmall">Mario Vargas Llosa</p>
-									<p>Megarrenuncia apulpinante</p>
+									<p><b>Megarrenuncia apulpinante</b></p>
 								</div>
 								<div>
 									<img src="image/img_blogueros.jpg" alt="">
 									<p class="xsmall">Augusto Álvarez Rodriguez</p>
-									<p>Respuesta a una derrota estridente</p>
+									<p><b>Respuesta a una derrota estridente</b></p>
 								</div>
 							</div>
 						</div>
@@ -954,7 +958,7 @@
 				</div>
 		<!--Contenido infinito-->
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 columnRight">
 				<div class="suscribe bg-sidebar">
 					<div class="bg-white">
 						<img class="mail" src="image/img_sucribe.png" >
@@ -1262,6 +1266,7 @@
 		</div>
 	</footer>
 </div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/slick.min.js"></script>
@@ -1271,7 +1276,8 @@
 			infinite: true,
 			slidesToShow: 9,
 			slidesToScroll: 1,
-			variableWidth:true
+			variableWidth:true,
+			centerMode:true
 		});
 	</script>
 	<script type="text/javascript">
@@ -1285,6 +1291,5 @@
 			arrows:false
 		});
 	</script>
-	
 </body>
 </html>

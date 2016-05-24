@@ -2,12 +2,8 @@
 <html lang="en">
 <head> 
 	<meta charset="UTF-8">
-<<<<<<< HEAD
-	<title>La República</title>
-	<!-- Latest compiled and minified CSS -->
-=======
 	<title>La República - Contacto</title>
->>>>>>> 29a5b093617e5a0a8cd0ddd67f9b1e3c4e420eae
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/dist/bootstrap.css">
 	<link rel="stylesheet" href="css/dist/font-awesome.min.css">
@@ -38,6 +34,10 @@
 							<i class="fa fa-google-plus"></i>
 							<i class="fa fa-envelope"></i>
 							<i class="fa fa-rss"></i>
+							<div>
+								<input type="text" placeholder="BUSCAR">
+								<a href=""><i class="fa fa-search"></i></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -45,7 +45,8 @@
 			<section class="header">
 				<div class="row">
 					<div class="col-lg-4 col-lg-offset-2">
-						<img class="logo" src="image/logo-la-republica.jpg" alt="">
+						<a href="index.html">
+						<img class="logo" src="image/logo-la-republica.jpg" alt=""></a>
 					</div>
 					<div class="col-lg-6 col-lg-offset-2">
 						<img class="floatRight" src="image/sideLogo.JPG" alt="">
@@ -65,12 +66,14 @@
 							<li><a href="">ESPECTÁCULOS</a></li>
 							<li><a href="">ED. IMPRESA</a></li>
 							<li><a href="">REGIONALES</a></li>
-							<li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a href="">MÁS SECCIONES <span class="caret"></span></a></li>
-							<ul class="dropdown-menu">
-								<li><a href="columnistas.html">Columnistas</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="contacto.html">Contacto</a></li>
-							</ul>	
+							<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MÁS SECCIONES<span class="caret"></span></a> 
+								<ul class="dropdown-menu"> 
+									<li><a href="columnistas.html">Columnistas</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contacto.html">Contacto</a></li> 
+								</ul> 
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -82,10 +85,29 @@
 			<div class="row">
 			<!--PUBLICIDAD PARA CAMBIAR DESPUES -->
 				<div class="publicidad pull-left col-md-2">
-					<img src="im age/sponsor_left.jpg">
+					<img src="image/sideAd2.jpg">
 				</div>
 			<!--PUBLICIDAD PARA CAMBIAR DESPUES -->
-				<div class="col-md-12 mt-3">
+				<div class="col-md-12">
+					<div class="temas">
+						<p class="floatLeft">TEMAS DEL DÍA</p>
+						<ul class="multiple-items floatLeft">
+							<li><i class="fa fa-circle"></i><a href="">Globos de oro</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Youtube</a></li>
+							<li><i class="fa fa-circle"></i><a href="">PNP</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Charlie Hebdo</a></li>
+							<li><i class="fa fa-circle"></i><a href="">FC Barcelona</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Alianza Lima</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Balón de Oro</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Alianza Lima</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Municipal</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Tumblr</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Yahoo!</a></li>
+							<li><i class="fa fa-circle"></i><a href="">Google</a></li>
+						</ul>
+					</div>
+					<br>
+					<br>
 					<h1 class="contacto">Contáctese con nosotros</h1>
 					<p class="forml mt-3">Llena este formulario si necesita enviarnos alguna información acerca del contenido del sitio web, su funcionalidad, o si tiene alguna propuesta de información o mejora para sitio. Así mismo, puede hacer llegar a los redactores su opinión acerca de los contenidos de una determinada sección el cual podrá elegir como destinatario.</p>
 					<form class="col-md-12">
@@ -292,7 +314,8 @@
 			infinite: true,
 			slidesToShow: 9,
 			slidesToScroll: 1,
-			variableWidth:true
+			variableWidth:true,
+			centerMode:true
 		});
 	</script>
 	<script type="text/javascript">

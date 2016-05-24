@@ -17,7 +17,6 @@ img{
 	margin-top:10px;
 }
 i{
-	margin-left:5px;
 	&.fa-facebook{
 		color:$blue;
 	}
@@ -36,11 +35,31 @@ i{
 }
 .ad{
 	background:$grey;
+	.floatRight{
+		*{
+			margin-left:10px;
+		}
+		div{
+		color:$darkGrey;
+		padding:5px 10px;
+		margin-left:10px;
+		display:inline;
+		border-left:1px solid $buttonGrey;
+		border-right:1px solid $buttonGrey;
 
+			input{
+				width:60px;
+				background:$grey;
+				border:none;
+				color:$darkGrey;
+			}
+		}
+	}
 	a,button{
 		font-size:11px;
 	}
-	button{@include button($lightRed,0px,5px);
+	button{@include button($lightRed,2px,5px);
+		vertical-align:middle;
 	}
 }
 nav{
@@ -51,7 +70,8 @@ nav{
 		margin-left:0px!important;
 		li{
 			padding:5px 0px;
-			border-right:1px solid $grey;
+			border-right:2px solid transparent;
+			border-image: url(../image/main_menu_sep.jpg) 10 round;
 			&:nth-child(10){
 				border:none;
 			}
@@ -59,7 +79,7 @@ nav{
 		a{	
 			font-family:"Open Sans Condensed";
 			color:$white;
-			margin:0px 11px;
+			margin:0px 10px;
 			&:hover{
 				color:$white;
 				font-weight:bold;
@@ -85,16 +105,11 @@ nav{
 	margin:0 20px;
 	vertical-align:middle;
 }
-.temas{
+.temas{@include repisa();
 	font-family:"Open Sans Condensed";
 	background:$buttonGrey;
 	border-radius:5px;
 	padding:5px 10px;
-	&:before,&:after{
-		content:" ";
-		display:block;
-		clear:both;
-	}
 	p{
 		width:15%;
 		margin-bottom:0px;
@@ -108,21 +123,14 @@ nav{
 		}
 	}
 }
-.officialContent{
-	.fa-facebook{@include contentButton($blue);
+i:first-child{
+	&.fa-facebook{@include contentButton($blue);
 	}
-	.fa-twitter{@include contentButton($lightBlue);
+	&.fa-twitter{@include contentButton($lightBlue);
 	}
-	.fa-google-plus{@include contentButton($red);
-	}
-	.fa-youtube-play{
-		color:$red;
-	}
-	.fa-camera{
-		color:$red;
+	&.fa-google-plus{@include contentButton($red);
 	}
 }
-
 /* - - - I N I C I O - F O O T E R - - - */
 .bg-gray{
 	background-color: $gray;
@@ -157,3 +165,54 @@ nav{
 	font-size: 12px;
 }
 /* - - - F I N - F O O T E R - - - */
+
+.fa-youtube-play{
+	color:$red;
+}
+.fa-camera{
+	color:$red;
+}
+
+h4.floatLeft {
+	font-family:"Open Sans Condensed";
+	margin-top:0px;
+	margin-right:20px;
+	font-weight:bold;
+	color:$darkGrey;
+}
+img.floatLeft{
+		margin-top:5px;
+		width:15px;
+		height:15px;
+}
+.contentWide{
+	>div{@include repisa();
+		position:relative;
+		border-bottom:1px solid $darkGrey;
+		.glyphicon{
+			color:$darkGrey;
+			vertical-align:text-top;
+		}
+		p:nth-child(4){
+			font-size:15px;
+		}
+		img{
+			margin-right:30px;
+			width:200px;
+			height:120px;
+		}
+		h4{
+			margin-top:0px;
+			font-weight:bold;
+		}
+		.bottomList{
+			position:absolute;
+			left:230px;
+			bottom:10px;;
+			p{
+				text-transform:uppercase;
+				font-size:12px;
+			}
+		}
+	}
+}

@@ -1,0 +1,86 @@
+h1,h2,h3,h4{
+	font-family:"PT Sans Caption";
+}
+h1{
+	margin-bottom:35px;
+}
+.contentWide{
+	>div{
+		border-bottom:none;
+	}
+}
+.columnistas{
+	margin-bottom:15px;
+	>div{@include repisa();
+		box-sizing:border-box;
+		border:1px solid $buttonGrey;
+		padding:10px;
+		width:30%;
+		margin:0 15px;
+		display:inline-block;
+		height:217px;
+		vertical-align:top;
+		position:relative;
+	}
+	.autor{
+		width:93%;
+		position: absolute;
+		bottom: 10px;
+		vertical-align:bottom;
+		padding:10px;
+		background:$buttonGrey;
+		img{@include imgColumnista(100px,100px);
+			margin-right:10px;
+		}
+		p{
+			color:$darkGrey;
+			font-weight:bold;
+		}
+		.small{
+			font-family:"Open Sans Condensed";
+			color:#000000;
+		}
+	}
+}
+.blockTop{
+	button{@include button($red,10px,20px);
+		display:inherit;
+		margin:0 auto;
+	}
+}
+.blockBottom{
+	div.center{
+		padding:10px 30px;
+		margin:10px 0px;
+		background:$red;
+		width:100%;
+		button{@include button($red,7px,15px);
+			border-radius:20px;
+			margin:0px 10px;
+		}
+	}
+	.autor{@include repisa();
+		width:100%;
+		border:none;
+		text-align:left;
+		padding:10px;
+		background:$buttonGrey;
+		&:hover{
+			background:$white;
+			border:1px solid $buttonGrey;
+		}
+		img{@include imgColumnista(80px,80px);
+			margin:5px 10px 5px 0px;
+		}
+		p{
+			margin-top:5px;
+			color:$darkGrey;
+			font-weight:bold;
+			line-height:1.2;
+		}
+		.small{
+			font-family:"Open Sans Condensed";
+			color:#000000;
+		}
+	}
+}

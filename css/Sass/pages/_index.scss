@@ -10,18 +10,30 @@
 	background:$grey;
 	border-top:4px solid $red;
 	padding-bottom:15px;
-	img{
+	img{@include imgColumnista(80px,80px);
 		margin:0 auto;
-		height:80px;
-		width:80px;
-		border:3px solid $white;
-		-webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
-		-moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
-		box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
 	}
 	div{
 		padding:10px 10px 0px 10px;
-		text-align:center
+		text-align:center;
+	}
+	.sectionTitle{
+		background:$red;
+		width:20%;
+		position:absolute;
+		left:40%;
+		top:-10px;
+		height:30px;
+		text-align:center;
+		color:white;
+		font-weight:bold;
+		padding:5px;
+	}
+	.xsmall{
+		margin-top:5px;
+	}
+	p:nth-child(3){
+		font-weight:bold;
 	}
 }
 .boxsetUno{
@@ -55,52 +67,10 @@
 		color:black;
 	}
 }
-.contentWide{
-	>h4{
-		font-family:"Open Sans Condensed";
-		margin-top:0px;
-		margin-right:20px;
-		font-weight:bold;
-		color:$darkGrey;
-	}
-	>img{
-		margin-top:5px;
-		width:15px;
-		height:15px;
-	}
-	div{
-		position:relative;
-		padding:20px 0px;
-		border-bottom:1px solid $darkGrey;
-		.glyphicon{
-			color:$darkGrey;
-			vertical-align:text-top;
-		}
-		p:nth-child(4){
-			font-size:15px;
-		}
-		&:before,&:after{
-			content:" ";
-			clear:both;
-			display:block;
-		}
-		img{
-			margin-right:30px;
-			width:200px;
-			height:120px;
-		}
-		h4{
-			margin-top:0px;
-			font-weight:bold;
-		}
-		.bottomList{
-			position:absolute;
-			left:225px;
-			bottom:10px;;
-			p{
-				text-transform:uppercase;
-				font-size:12px;
-			}
+.news{
+	.contentWide{
+		>div{
+			padding:20px 0px;
 		}
 	}
 }

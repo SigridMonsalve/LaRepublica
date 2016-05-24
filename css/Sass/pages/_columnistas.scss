@@ -5,14 +5,13 @@ h1{
 	margin-bottom:35px;
 }
 .contentWide{
-	margin:0px;
 	>div{
 		border-bottom:none;
 	}
 }
 .columnistas{
 	margin-bottom:15px;
-	>div{
+	>div{@include repisa();
 		box-sizing:border-box;
 		border:1px solid $buttonGrey;
 		padding:10px;
@@ -22,11 +21,6 @@ h1{
 		height:217px;
 		vertical-align:top;
 		position:relative;
-		&:before,&:after{
-			content:" ";
-			display:block;
-			clear:both;
-		}
 	}
 	.autor{
 		width:93%;
@@ -52,5 +46,41 @@ h1{
 	button{@include button($red,10px,20px);
 		display:inherit;
 		margin:0 auto;
+	}
+}
+.blockBottom{
+	div.center{
+		padding:10px 30px;
+		margin:10px 0px;
+		background:$red;
+		width:100%;
+		button{@include button($red,7px,15px);
+			border-radius:20px;
+			margin:0px 10px;
+		}
+	}
+	.autor{@include repisa();
+		width:100%;
+		border:none;
+		text-align:left;
+		padding:10px;
+		background:$buttonGrey;
+		&:hover{
+			background:$white;
+			border:1px solid $buttonGrey;
+		}
+		img{@include imgColumnista(80px,80px);
+			margin:5px 10px 5px 0px;
+		}
+		p{
+			margin-top:5px;
+			color:$darkGrey;
+			font-weight:bold;
+			line-height:1.2;
+		}
+		.small{
+			font-family:"Open Sans Condensed";
+			color:#000000;
+		}
 	}
 }

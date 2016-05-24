@@ -10,6 +10,9 @@
 		background:darken($bg,10%);
 		color:$white;
 	}
+	&:active{
+		background:$shinyRed;
+	}
 }
 @mixin contentButton($color){
 	width:25px;
@@ -59,4 +62,11 @@
 	-webkit-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
 	-moz-box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
 	box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.54);
+}
+@mixin repisa(){
+	&:before,&:after{
+		content:" ";
+		display:block;
+		clear:both;
+	}
 }

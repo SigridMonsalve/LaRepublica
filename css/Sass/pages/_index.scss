@@ -17,6 +17,24 @@
 		padding:10px 10px 0px 10px;
 		text-align:center;
 	}
+	.sectionTitle{
+		background:$red;
+		width:20%;
+		position:absolute;
+		left:40%;
+		top:-10px;
+		height:30px;
+		text-align:center;
+		color:white;
+		font-weight:bold;
+		padding:5px;
+	}
+	.xsmall{
+		margin-top:5px;
+	}
+	p:nth-child(3){
+		font-weight:bold;
+	}
 }
 .boxsetUno{
 	>div{@include bgTitular(url(../image/img_especiales.jpg),45%,5px,10px);
